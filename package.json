@@ -1,0 +1,44 @@
+{
+  "name": "rasp-parser",
+  "version": "5.0.3",
+  "author": "Bogdan ( bogdan.dzhumabaev@ya.ru )",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run ts-node",
+    "start:dev": "nodemon --exec npm run ts-node",
+    "start:dev:test": "nodemon --exec npm run ts-node:test",
+    "ts-node": "ts-node ./src/index.ts",
+    "prets-node:test": "npm test",
+    "ts-node:test": "npm run ts-node",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "pretest": "npm run lint",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "notify": true,
+    "rootDir": "src/",
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jsdom": "^21.1.2",
+    "@types/seedrandom": "^3.0.5",
+    "axios": "^1.5.0",
+    "express": "^4.18.2",
+    "ics": "^3.4.0",
+    "jsdom": "^22.1.0",
+    "seedrandom": "^3.0.5"
+  }
+}

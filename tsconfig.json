@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "sourceMap": true,
+    "target": "es2020",
+    "lib": ["es2020", "DOM"],
+    "rootDir": "src/",
+    "typeRoots": ["./node_modules/@types/"],
+    "outDir": "dist/",
+    "plugins": []
+  },
+  "exclude": [
+    "node_modules",
+    "jspm_modules",
+    "**/*.spec.*",
+    "**/*.test.*",
+    "**/__tests__/*"
+  ]
+}
